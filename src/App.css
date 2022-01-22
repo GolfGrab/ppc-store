@@ -1,3 +1,6 @@
-body {font-family: 'Mochiy Pop P One', sans-serif;
+body {
+font-family: 'Mochiy Pop P One', sans-serif;
 font-family: 'Open Sans Condensed', sans-serif;
-background-color: rgb(53, 53, 53);}
+background-color: rgb(53, 53, 53);
+padding: 3rem 3rem;
+}
