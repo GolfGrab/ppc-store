@@ -1,9 +1,11 @@
 import React from 'react';
 import "./homepage.styles.scss"
+import MenuBox from './../../components/menu-box/menu-box.component';
 
 const HomePage = () => (
   <div className='homepage'>
-    <div className='menu-box'>
+    <MenuBox/>
+    {/* <div className='menu-box'>
       <div className="menu-item">
         <div className="content">
           <h1 className="title">DOG</h1>
@@ -34,7 +36,7 @@ const HomePage = () => (
           <span className="subtitle">SHOP NOW</span>
         </div>
       </div>
-    </div>
+    </div> */}
   </div>
 )
 
