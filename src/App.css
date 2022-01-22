@@ -1,19 +1,10 @@
 body {
   font-family: "Mochiy Pop P One", sans-serif;
   font-family: "Open Sans Condensed", sans-serif;
-  background-color: rgb(53, 53, 53);
+  background-color: rgb(233, 233, 233);
   padding: 3rem 3rem;
 }
 
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-a:hover {
-  text-shadow: #fff 0 0 0.5rem;
-}
-
-a:focus {
-  text-shadow: #fff 0 0 0.5rem;
+* {
+  box-sizing: border-box;
 }
