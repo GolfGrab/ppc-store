@@ -43,7 +43,7 @@ export default class MenuBox extends Component {
     return (
       <div className='menu-box'>
         {this.state.sections.map(({ title, imageUrl, id,size }) => (
-          <MenuItem key={id} title={title} imageUrl={imageUrl} size={size}/>
+          <MenuItem title={title} key={id} imageUrl={imageUrl} size={size}/>
         ))}
       </div>
     )
