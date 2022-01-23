@@ -1,5 +1,6 @@
 import React from 'react';
 import LogIn from '../../components/login/login.component';
+// import FLogIn from '../../components/login/login.f.component';
 import SignUp from '../../components/signup/signup.component';
 import './log-in-and-sign-up-page.styles.scss'
 
