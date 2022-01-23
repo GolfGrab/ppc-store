@@ -57,7 +57,7 @@ export default function FLogIn() {
 
           <div className="buttons">
             <CustomButton type='submit' >Log In</CustomButton>
-            <CustomButton onClick={signInWithGoogle} isGoogleSignIn={true}>Sign In With Google</CustomButton>
+            <CustomButton type='button' onClick={signInWithGoogle} isGoogleSignIn={true}>Sign In With Google</CustomButton>
           </div>
         </form>
       </div>
