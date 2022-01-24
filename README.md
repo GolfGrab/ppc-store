@@ -2,17 +2,18 @@
 
 ## Pretty Pet Clothing Store
 
-### react-firebase project
+### react-huge project
 
 #### Front End
 
-- react 1.17.2
-- react-router-dom 6.2.1
-- sass 7.0.1
+- react
+- react-router-dom
+- redux
+- sass
 
 #### Back End
 
-- firebase 9.6.4
+- firebase
 
 learn from 🔽🔽HERE🔽🔽
 

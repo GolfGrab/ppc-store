@@ -12,7 +12,7 @@ const signInWithGoogle = () => {
     // The signed-in user info.
     const user = result.user
     // ...
-    console.log(credential, token, user)
+    // console.log(credential, token, user)
 
   }).catch((error) => {
     // Handle Errors here.

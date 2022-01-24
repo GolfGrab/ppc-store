@@ -10,8 +10,8 @@ export const creatUserProfileDocument = async (userAuth, Firebase_Firestore, add
   try {
     const userRef = doc(Firebase_Firestore, `users/${userAuth.uid}`)
     const snapShot = await getDoc(userRef)
-    console.log("useRef =  ",userRef)
-    console.log("snapshot =   " ,snapShot)
+    // console.log("useRef =  ",userRef)
+    // console.log("snapshot =   " ,snapShot)
     if (!snapShot.exists()) {
       const { displayName, email } = userAuth
       const timeCreate = new Date()
