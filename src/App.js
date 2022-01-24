@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import './App.css';
 import Header from './components/header/header.component';
 import HomePage from './pages/homepage/homepage.component';
@@ -52,7 +52,15 @@ class App extends React.Component {
         <Routes>
           <Route exact path='/' element={<HomePage />} />
           <Route path='/shop' element={<ShopPage />} />
-          <Route path='/login-signup' element={<LogInAndSignUpPage />} />
+          <Route exact path='/login-signup'
+            element={
+              <MiddleCondition
+                isCondition={!this.props.currentUser}
+                trueConditionComponent={<LogInAndSignUpPage />}
+                falseConditionPath='/'
+              />
+            }
+          />
         </Routes>
       </div>
     )
@@ -60,8 +68,23 @@ class App extends React.Component {
 
 }
 
+function MiddleCondition({ isCondition, trueConditionComponent, falseConditionPath }) {
+  const navigate = useNavigate()
+  if (isCondition) {
+    return trueConditionComponent
+  } else {
+    navigate(falseConditionPath)
+    return null
+  }
+}
+
+
+const mapStateToProps = (state) => ({
+  currentUser: state.user.currentUser
+})
+
 const mapDispatchToProps = (dispatch) => ({
   setCurrentUser: (user) => dispatch(setCurrentUser(user))
 })
 
-export default connect(null, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
